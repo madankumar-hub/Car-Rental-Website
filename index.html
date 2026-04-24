@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RideFleet - Premium Vehicle Rental Service. Rent cars, bikes & SUVs at the best hourly rates.">
+    <title>RideFleet | Vehicle Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🚗</span>
+                <span class="logo-text">Ride<span class="accent">Fleet</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vehicles">Vehicles</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">🔥 #1 Vehicle Rental Platform</div>
+                <h1>Rent Your <span class="gradient-text">Dream Ride</span> Today</h1>
+                <p>Choose from our premium fleet of cars, bikes, and SUVs. Affordable hourly rates, zero hassle, and instant booking.</p>
+                <div class="hero-search">
+                    <div class="search-box">
+                        <span class="search-icon">📍</span>
+                        <input type="text" placeholder="Enter pickup location..." id="searchLocation">
+                    </div>
+                    <a href="#vehicles" class="btn btn-primary">Browse Vehicles</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <strong>500+</strong>
+                        <span>Vehicles</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>10K+</strong>
+                        <span>Happy Riders</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>50+</strong>
+                        <span>Cities</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>4.8★</strong>
+                        <span>Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-car-card">
+                    <div class="hero-car-emoji">🏎️</div>
+                    <div class="hero-car-info">
+                        <span class="hero-car-tag">Featured</span>
+                        <h3>Tesla Model S</h3>
+                        <p>₹2,500/hr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section id="vehicles" class="vehicles-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Fleet</span></h2>
+                <p>Browse our wide range of vehicles. Filter by type and find your perfect ride.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">
+                    <span>🚘</span> All
+                </button>
+                <button class="filter-btn" data-filter="car">
+                    <span>🚗</span> Cars
+                </button>
+                <button class="filter-btn" data-filter="suv">
+                    <span>🚙</span> SUVs
+                </button>
+                <button class="filter-btn" data-filter="bike">
+                    <span>🏍️</span> Bikes
+                </button>
+                <button class="filter-btn" data-filter="luxury">
+                    <span>✨</span> Luxury
+                </button>
+                <button class="filter-btn" data-filter="electric">
+                    <span>⚡</span> Electric
+                </button>
+            </div>
+
+            <!-- Vehicle Grid -->
+            <div class="vehicle-grid" id="vehicleGrid">
+                <!-- Cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It <span class="gradient-text">Works</span></h2>
+                <p>Renting a vehicle is as easy as 1-2-3</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">🔍</div>
+                    <h3>Choose Vehicle</h3>
+                    <p>Browse our fleet and pick the vehicle that fits your needs and budget.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">📋</div>
+                    <h3>Book Instantly</h3>
+                    <p>Select your pickup time and duration. Confirm your booking in seconds.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Ride & Enjoy</h3>
+                    <p>Pick up your vehicle and hit the road. Return it when you're done!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-text">
+                    <h2>Ready to <span class="gradient-text">Ride?</span></h2>
+                    <p>Download our app or call us to get started with your rental today.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+917296994942" class="btn btn-primary">📞 Call Now</a>
+                        <a href="mailto:madanchouhanmadan23@gmail.com" class="btn btn-outline">✉️ Email Us</a>
+                    </div>
+                </div>
+                <div class="cta-info">
+                    <div class="cta-info-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Jaipur, Rajasthan</p>
+                        </div>
+                    </div>
+                    <div class="cta-info-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 72969 94942</p>
+                        </div>
+                    </div>
+                    <div class="cta-info-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>madanchouhanmadan23@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="cta-info-item">
+                        <span>⏰</span>
+                        <div>
+                            <strong>Working Hours</strong>
+                            <p>24/7 Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">🚗</span>
+                <span class="logo-text">Ride<span class="accent">Fleet</span></span>
+                <p>Your trusted vehicle rental partner.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#vehicles">Vehicles</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">© 2026 RideFleet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalTitle">Book Vehicle</h2>
+                <p id="modalSubtitle" class="modal-subtitle"></p>
+            </div>
+            <div class="modal-vehicle-info" id="modalVehicleInfo"></div>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookName">Full Name</label>
+                        <input type="text" id="bookName" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookPhone">Phone Number</label>
+                        <input type="tel" id="bookPhone" required placeholder="+91 XXXXX XXXXX">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookDate">Pickup Date</label>
+                        <input type="date" id="bookDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookTime">Pickup Time</label>
+                        <input type="time" id="bookTime" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bookHours">Duration (Hours)</label>
+                    <input type="number" id="bookHours" min="1" max="72" value="1" required>
+                </div>
+                <div class="total-price" id="totalPrice">
+                    Total: <strong>₹0</strong>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Confirm Booking 🎉</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✅</span>
+        <span class="toast-message" id="toastMessage">Booking confirmed!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
